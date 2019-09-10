@@ -15,7 +15,7 @@ export class ColumnHeadersComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.yScrollSub = this.scrollService.columnHeaderEmitter.subscribe(cord => {
-      this.currentY = (cord.getY()) + 'px';
+      this.currentY = (cord.getY() + 14) + 'px';
       this.currentX = '-' + cord.getX() + 'px';
       cord.getRelative() ?  this.handleVerticalScroll() : this.handleHorizontalScroll();
     });
