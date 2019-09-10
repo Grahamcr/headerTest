@@ -30,7 +30,7 @@ export class DataInsightsComponent implements OnInit, OnDestroy {
   setFixedPosition() {
     this.renderer.setStyle(this.elementRef.nativeElement, 'position', 'fixed');
     this.renderer.setStyle(this.elementRef.nativeElement, 'left', '0px');
-    this.renderer.setStyle(this.elementRef.nativeElement, 'z-index', '2');
+    this.renderer.setStyle(this.elementRef.nativeElement, 'z-index', '3');
     this.renderer.setStyle(this.elementRef.nativeElement, 'margin-top', this.currentY);
   }
 

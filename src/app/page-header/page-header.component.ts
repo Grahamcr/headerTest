@@ -30,7 +30,7 @@ export class PageHeaderComponent implements OnInit, OnDestroy {
     this.renderer.setStyle(this.elementRef.nativeElement, 'position', 'fixed');
     this.renderer.setStyle(this.elementRef.nativeElement, 'top', this.currentY);
     this.renderer.setStyle(this.elementRef.nativeElement, 'left', this.currentX);
-    this.renderer.setStyle(this.elementRef.nativeElement, 'z-index', '3');
+    this.renderer.setStyle(this.elementRef.nativeElement, 'z-index', '4');
   }
 
 }
